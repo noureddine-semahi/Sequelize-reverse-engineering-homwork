@@ -23,36 +23,52 @@ CONFIG (folder)
  { contains javascript logic that tells passport we want to log in with an email address and password };
 
 MIDDLEWARE (subfolder)
+
 -isAuthenticated.js 
 { restricts routes that a user is not allowed to visit if not logged in. if user is logged in, it continues with request };
+
 MODELS (folder)
+
 -index.js
  { connects to database and imports users log in data };
+
 -user.js 
 { requires "bcrypt" for password hashing. this makes our database secure even if compromised. Here we have JS that defines what is stored on our database };
+
 PUBLIC (folder)
+	
 	-login.html
 { Boilerplate html static page which is rendered when }
+	
 	-members.html {}
+	
 	-signup.html {}
 	JS (subfolder)
+		
 		-login.js {}
+		
 		-members.js{}
+		
 		-signup.js{}
+	
 	STYLESHEETS (subfolder)
+		
 		-style.css{}
 
 
 
 ROUTES (folder)
+
 -api-routes.js 
 { contains routes for signing in, logging out and getting users specific data to be displayed client side };
+
 -html-routes.js
 { routes that check whether user is signed in, whether user already has account etc and sends them to the correct html page };
 
 -package.json 
 { contains all package info, node modules used, version info etc
 This file contains all the packages and dependencies information as well as the scripts, versions of each dependency and their licence and the version number };
+
 -server.js
  { requires packages, sets up PORT, creates express and middleware, creates routes and syncs database / logs message in terminal on successful connection to server
 The express variable is requiring express package
