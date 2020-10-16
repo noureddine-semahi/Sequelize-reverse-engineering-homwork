@@ -37,22 +37,16 @@ MODELS (folder)
 
 PUBLIC (folder)
 	
-	-login.html
-{ Boilerplate html static page which is rendered when }
-	
+	-login.html { Boilerplate html static page which is rendered when }
 	-members.html {}
-	
 	-signup.html {}
+	
 	JS (subfolder)
-		
 		-login.js {}
-		
 		-members.js{}
-		
 		-signup.js{}
 	
 	STYLESHEETS (subfolder)
-		
 		-style.css{}
 
 
